@@ -16,4 +16,5 @@ function fn() {
     config.faker = Java.type('com.github.javafaker.Faker');
 
     return config;
+    
 }
