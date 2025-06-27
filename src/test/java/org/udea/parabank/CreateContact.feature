@@ -9,7 +9,7 @@ Feature: Login to app contact
     Given path '/users/login'
     And request {"email": "pruebasudea@test.com","password": "12345678"}
     When method POST
-    * def authToken - response.token
+    * def authToken = response.token
   
   Scenario: Customer Create contact
     Given path '/contacts'
