@@ -1,11 +1,9 @@
 @appcontact_createcontact
-Feature: Login to app contact
+Feature: Create contact to app contact
 
   Background:
     * url baseUrl
     * header Accept = 'application/json'
-    
-  Scenario: Customer Login
     Given path '/users/login'
     And request {"email": "pruebasudea@test.com","password": "12345678"}
     When method POST
