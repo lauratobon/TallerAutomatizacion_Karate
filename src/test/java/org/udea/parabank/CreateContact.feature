@@ -5,7 +5,7 @@ Feature: Create contact to app contact
     * url baseUrl
     * header Accept = 'application/json'
     Given path '/users/login'
-    And request {"email": "pruebasudea@test.com","password": "12345678"}
+    And request {"email": "mori@mori.com","password": "12345678"}
     When method POST
     Then status 200
     * def authToken = response.token
